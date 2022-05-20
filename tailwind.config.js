@@ -1,22 +1,24 @@
 module.exports = {
-  content: ['./src/**/*.{html,js}', './node_modules/tw-elements/dist/js/**/*.js'],
+  content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
-        'oswald': ['Oswald', 'sans-serif'],
-        'baskerville': ['Libre Baskerville', 'serif'],
-        'playfair': ['Playfair Display', 'serif'],
-        'helvetica': ['helvetica-w01-bold', 'helvetica-w02-bold', 'helvetica-lt-w10-bold', 'sans-serif']
+        'calibri': ['Calibri', 'sans-serif'],
+        'arial': ['Arial', 'sans-serif']
+      },
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
       },
       colors: {
-        'dark':         "rgb(18 ,14 ,1)",
-        'citation-bg':  "rgb(55 ,45 ,29)",
-        'maroon':       "rgb(101 ,86 ,78)",
-        'green':        "rgb(174 ,198 ,118)",
-        'beige':        "rgba(175 ,166 ,154, 0.7)",
-        'light-green':  "rgb(213 ,227 ,181)",
-        'darkWhite':    "rgb(219 ,208 ,193)",
-        'backStage':    "rgb(251 ,243 ,232)"
+        'ivory':      "rgb(255 ,255 ,240)",
+        'blue':       "rgb(0   ,176 ,240)",
+        'yellow':     "rgb(255 ,255 ,0  )",
+        'green':      "rgb(144 ,206 ,80 )",
+        'purple':     "rgb(112 ,48  ,160)",
+        'blue-gray':  "rgb(149 ,179 ,215)",
+        'orange':     "rgb(250 ,191 ,143)",
+        'gray':       "rgb(166 ,166 ,166)"
       },
       spacing:{
         '1/20': "5%",
@@ -61,11 +63,10 @@ module.exports = {
         '19/20': "95%",
       },
       width: {
-        'screen': '100vw',
-        'formulas': '485px',
+        'card': '6.5cm',
       },
       height: {
-        'middleScreen': '50vh',
+        'card': '11cm',
       },
       inset: {
         'full': '100%',
